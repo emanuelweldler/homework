@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+}
+
+h1 {
+    border-style: dashed;
+    border-color: darkgray;
+    border-radius: 1%;
+    margin: 16px;
+    padding: 1em;
+    color: white;
+}
+
+p {
+    color: darkgrey;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: white;
+    color: darkred
+}
+
+a:visited {
+    color: blue;
+}
+
+/*img {
+    max-block-size: 50;
+}
