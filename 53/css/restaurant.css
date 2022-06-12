@@ -1,0 +1,50 @@
+body {
+
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    margin: auto;
+    max-width: 800%;
+    width: 100%;
+}
+
+#ribpic {
+    max-height: 500px;
+}
+
+.rib-pic {
+    height: 300px;
+    width: 307px;
+}
+
+.index-id {
+    height: 230px;
+}
+
+h1 {
+    border-style: dashed;
+    border-color: darkgray;
+    border-radius: 1%;
+    margin: 16px;
+    padding: 1em;
+    color: white;
+    text-shadow: -10px -10px 10px red, 10px 10px 10px green;
+}
+
+p {
+    color: darkgrey;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px blue;
+
+
+}
+
+a:hover {
+    background-color: white;
+    color: darkred
+}
+
+a:visited {
+    color: blue;
+}
