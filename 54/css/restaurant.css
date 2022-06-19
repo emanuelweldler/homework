@@ -32,9 +32,11 @@ h1 {
     padding: 1em;
     color: white;
     text-shadow: -10px -10px 10px red, 10px 10px 10px green;
+    font-family: Marker Felt, fantasy;
 }
 
 p {
+    font-family: 'Creepster', cursive;
     color: darkgrey;
     font-style: italic;
     font-size: 20px;
