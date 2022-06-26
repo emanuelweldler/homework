@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <title>Rate Us</title>
+</head>
+<style>
+    body {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        margin: 18px;
+    }
+
+    form {
+        color: aliceblue
+    }
+</style>
+
+<body>
+    <a class="homeLink" href="index.html">Home</a>
+    <form method="POST" action="something.php">
+        <lable for="firstName"> First Name: </lable>
+        <input id="firstName" name="first" minlength="2" required placeholder="Your First Name" />
+        <lable for="lastName">Last Name: </lable>
+        <input id="lastName" name="last" maxlength="10" required placeholder="Your Last Name">
+        <lable for="emailAddress">Email Address:</lable>
+        <input type="email" name="email" placeholder="Your Email Address">
+
+        <lable for="range">Rate Your Experience</lable>
+        <input type="range" name="range" min="1" max="10">
+        <lable for="textBox"> Tell Us What We Can Do Better</lable>
+        <textarea name="textbox" placeholder="Leave A Comment"></textarea>
+        <input type="submit">
+
+
+
+
+    </form>
+</body>
+
+</html>

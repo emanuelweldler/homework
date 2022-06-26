@@ -1,0 +1,87 @@
+body {
+    background-image: url("../images/darkRestaurant.webp");
+    background-repeat: none;
+    background-size: auto;
+    background-size: cover;
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    margin: auto;
+    max-width: 800%;
+    width: 100%;
+}
+
+#ribpic {
+    max-height: 500px;
+}
+
+.rib-pic {
+    height: 300px;
+    width: 307px;
+}
+
+.index-id {
+    height: 230px;
+}
+
+h1 {
+    border-style: dashed;
+    border-color: darkgray;
+    border-radius: 1%;
+    margin: 16px;
+    padding: 1em;
+    color: white;
+    text-shadow: -10px -10px 10px red, 10px 10px 10px green;
+    font-family: Marker Felt, fantasy;
+}
+
+@media screen and (min-width: 800px) {
+    img {
+        width: 20%;
+    }
+}
+
+p {
+    font-family: 'Creepster', cursive;
+    color: darkgrey;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px blue;
+}
+
+.messageBox {
+    color: red;
+    background-color: black;
+    border: 1px solid white;
+    width: 30em;
+    height: 9em;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+div>img {
+    position: absolute;
+    bottom: 0;
+    left: 12em;
+    right: 0;
+
+
+}
+
+.homeLink {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+a:hover {
+    background-color: white;
+    color: darkred
+}
+
+a:visited {
+    color: lightgreen;
+}
