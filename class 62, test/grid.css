@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "left nav nav nav nav"
+    ".  head head head . "
+    ".  prod prod prod . "
+    ". title title title ."
+    ".  pics pics pics . "
+    ".  form form form . "
+    ".  financials . . . "
+    ".  table table table . "
+    ".  about about about ."
+    "bleft footer footer footer footer";
+  grid-template-columns: 4em 1fr 1fr 1fr 4em;
+
+}
+
+.leftCorner {
+  grid-area: left;
+  background-color: #333;
+  height: 2.5em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  grid-area: nav;
+  height: 2.5em;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: blocks;
+  text-align: start;
+
+
+}
+
+li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+header {
+  grid-area: head;
+  text-align: center;
+  background-color: lightgray;
+  text-align: center;
+  padding: 2em;
+  border-radius: 0px 0px 20px 20px;
+
+}
+
+#bold {
+  padding-top: 1em;
+  text-transform: uppercase;
+  text-align: virticle;
+}
+
+.prod {
+  grid-area: prod;
+  padding-top: 2em;
+}
+
+
+
+.pics {
+  grid-area: pics;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+}
+
+img {
+  align-items: space-between;
+}
+
+.d1 {
+  border-left: 2px solid grey;
+
+}
+
+.c1 {
+  text-align: center;
+}
+
+.form {
+  margin-top: 2em;
+  grid-area: form;
+  text-align: center;
+  background-color: lightgray;
+  height: 150px;
+
+}
+
+input {
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.financials {
+  grid-area: financials;
+  text-align: left;
+}
+
+.table {
+  grid-area: table;
+  margin: auto;
+  table-layout: fixed;
+}
+
+.table h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  width: 200px;
+  height: 20px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+tbody tr:hover {
+  background-color: blue;
+}
+
+tfoot:hover {
+  background-color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.about {
+  grid-area: about;
+}
+
+.about p {
+  grid-area: about;
+  padding-bottom: 1em;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: start;
+  background-color: #333;
+  color: white;
+  height: 35px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 4em;
+  right: 0;
+
+}
+
+.leftBottom {
+  grid-area: bleft;
+  background-color: #333;
+  height: 35px;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+
+@media screen and (max-width: 644px) {
+  body {
+    text-align: center;
+  }
+
+  .pics {
+    flex-direction: column;
+  }
+
+  .form {
+    display: inline-block;
+  }
+
+  input {
+    width: 85%;
+    height: 50%;
+    box-shadow: black;
+
+  }
+
+  .table {
+    display: table;
+    overflow-x: scroll;
+  }
+
+}
