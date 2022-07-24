@@ -1,0 +1,8 @@
+body {
+    display: grid;
+    grid-template-columns: 1em 10em 1em;
+}
+
+.p-3 bg-dark text-white {
+    grid-column-start: 1;
+}

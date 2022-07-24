@@ -1,0 +1,5 @@
+what did i miss:
+not sure if this is a point: <i> in html
+1: didn't make the pictures fill up parents so they don't line up
+1: no scroll bar on table
+1: when making bigger the layout breaks
